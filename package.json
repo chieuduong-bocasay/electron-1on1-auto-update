@@ -29,7 +29,9 @@
       "type": "distribution"
     },
     "publish": {
-      "provider": "github"
+      "provider": "github",
+      "owner": "chieu",
+      "repo": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update"
     }
   },
   "dependencies": {
