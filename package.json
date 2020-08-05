@@ -1,0 +1,43 @@
+{
+  "name": "1on1-auto-update",
+  "version": "0.0.1",
+  "description": "Chieu dep trai",
+  "main": "src/core/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chieuduong-bocasay/electron-1on1-auto-update.git"
+  },
+  "author": "Chieu Duong",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^8.2.4",
+    "electron-builder": "^22.3.2"
+  },
+  "build": {
+    "appId": "1on1.auto.update",
+    "productName": "1on1-auto-update",
+    "copyright": "anh dep trai",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "type": "distribution"
+    },
+    "publish": [
+      "github"
+    ]
+  },
+  "dependencies": {
+    "electron-updater": "^4.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update/issues"
+  },
+  "homepage": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update#readme",
+  "keywords": []
+}
