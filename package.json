@@ -1,6 +1,6 @@
 {
   "name": "1on1-auto-update",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Chieu dep trai",
   "main": "src/core/main.js",
   "scripts": {
@@ -33,7 +33,7 @@
         "provider": "github",
         "owner": "chieuduong-bocasay",
         "repo": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update",
-        "token": "b2a014c495875735a036d913b1c500e88db24355"
+        "token": "https://api.github.com/app/installations/b2a014c495875735a036d913b1c500e88db24355/access_tokens"
       }
     ]
   },
