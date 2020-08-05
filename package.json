@@ -28,11 +28,9 @@
       "category": "public.app-category.developer-tools",
       "type": "distribution"
     },
-    "publish": [
-      {
-        "provider": "github"
-      }
-    ]
+    "publish": {
+      "provider": "github"
+    }
   },
   "dependencies": {
     "electron-updater": "^4.0.4"
