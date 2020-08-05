@@ -29,7 +29,9 @@
       "type": "distribution"
     },
     "publish": [
-      "github"
+      {
+        "provider": "github"
+      }
     ]
   },
   "dependencies": {
