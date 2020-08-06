@@ -1,24 +1,14 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const { app, BrowserWindow } = require("electron");
 const { autoUpdater } = require("electron-updater");
 
-ipcMain.on("autoUpdate.status", (evt, token) => {
-  const data = {
-    provider: "github",
-    owner: "chieuduong-bocasay",
-    repo: "electron-1on1-auto-update",
-    token: "311c42e68ee580b07d071794f0f5a3475cbafb69",
-  };
-  updater.setFeedURL(data);
-  updater.autoDownload = false;
-  updater.checkForUpdates();
+autoUpdater.setFeedURL({
+  provider: "github",
+  owner: "chieuduong-bocasay",
+  repo: "electron-1on1-auto-update",
+  token: "311c42e68ee580b07d071794f0f5a3475cbafb69",
 });
-
-// autoUpdater.setFeedURL({
-//   provider: "github",
-//   owner: "chieuduong-bocasay",
-//   repo: "electron-1on1-auto-update",
-//   token: "311c42e68ee580b07d071794f0f5a3475cbafb69",
-// });
+autoUpdater.autoDownload = false;
+autoUpdater.checkForUpdates();
 
 let win;
 
