@@ -1,6 +1,6 @@
 {
   "name": "1on1-auto-update",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Chieu dep trai",
   "main": "./app/main.js",
   "scripts": {

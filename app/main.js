@@ -1,6 +1,13 @@
 const { app, BrowserWindow } = require("electron");
 const { autoUpdater } = require("electron-updater");
 
+autoUpdater.setFeedURL({
+  provider: "github",
+  owner: "chieuduong-bocasay",
+  repo: "electron-1on1-auto-update",
+  token: "311c42e68ee580b07d071794f0f5a3475cbafb69",
+});
+
 let win;
 
 const dispatch = (data) => {
