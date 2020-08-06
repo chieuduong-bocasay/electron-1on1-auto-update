@@ -1,6 +1,6 @@
 {
   "name": "1on1-auto-update",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Chieu dep trai",
   "main": "./app/main.js",
   "scripts": {
@@ -52,17 +52,8 @@
     "electron-updater": "^4.0.4"
   },
   "bugs": {
-    "url": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update"
+    "url": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update/issues"
   },
-  "homepage": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update",
-  "keywords": [
-    "electron",
-    "react",
-    "redux",
-    "scss",
-    "material",
-    "webpack",
-    "hot",
-    "reload"
-  ]
+  "homepage": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update#README",
+  "keywords": []
 }
