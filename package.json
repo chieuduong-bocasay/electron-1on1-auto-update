@@ -8,7 +8,8 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "postinstall": "electron-builder install-app-deps",
-    "release": "electron-builder build "
+    "release": "electron-builder build",
+    "publish": "build --mac -p always"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,6 @@
     "electron": "^8.2.4",
     "electron-builder": "^22.3.2"
   },
-  "publish": "build --mac -p always",
   "build": {
     "appId": "com.electron.app",
     "publish": [
