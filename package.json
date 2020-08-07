@@ -8,7 +8,8 @@
     "pack": "electron-builder --dir",
     "build": "electron-builder",
     "postinstall": "electron-builder install-app-deps",
-    "release": "electron-builder build"
+    "release": "GH_TOKEN=4d202146426934d9587c1ee0e6df7b0107a476c9 electron-builder build -p always",
+    "publish": "build --mac -p always"
   },
   "repository": {
     "type": "git",
