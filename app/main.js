@@ -6,6 +6,7 @@ autoUpdater.setFeedURL({
   owner: "chieuduong-bocasay",
   repo: "electron-1on1-auto-update",
   token: "311c42e68ee580b07d071794f0f5a3475cbafb69",
+  private: false,
 });
 autoUpdater.autoDownload = false;
 autoUpdater.checkForUpdates();
