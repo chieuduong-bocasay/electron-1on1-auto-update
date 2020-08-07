@@ -6,10 +6,9 @@
   "scripts": {
     "start": "electron --debug .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
+    "build": "electron-builder",
     "postinstall": "electron-builder install-app-deps",
-    "release": "electron-builder build",
-    "publish": "build --mac -p always"
+    "release": "electron-builder build"
   },
   "repository": {
     "type": "git",
