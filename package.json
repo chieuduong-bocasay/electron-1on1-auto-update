@@ -1,65 +1,25 @@
 {
-  "name": "1on1-auto-update",
+  "name": "electron-auto-update-example",
   "version": "0.0.2",
-  "description": "Chieu dep trai",
-  "main": "./main.js",
-  "scripts": {
-    "start": "electron --debug .",
-    "pack": "electron-builder --dir",
-    "build": "electron-builder",
-    "postinstall": "electron-builder install-app-deps",
-    "release": "GH_TOKEN=4d202146426934d9587c1ee0e6df7b0107a476c9 electron-builder build -p always"
-  },
+  "description": "",
+  "main": "main.js",
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:chieuduong-bocasay/electron-1on1-auto-update.git"
+    "url": "https://github.com/johndyer24/electron-auto-update-example.git"
   },
-  "author": "Chieu Duong",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --mac --win --publish never",
+    "deploy": "electron-builder build --mac --win --publish always"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "electron": "^8.2.4",
-    "electron-builder": "^22.3.2"
-  },
-  "publish": [
-    {
-      "provider": "github",
-      "owner": "chieuduong-bocasay",
-      "repo": "electron-1on1-auto-update",
-      "token": "311c42e68ee580b07d071794f0f5a3475cbafb69"
-    }
-  ],
-  "build": {
-    "appId": "com.electron.app",
-    "win": {
-      "publish": [
-        "github"
-      ],
-      "target": [
-        "nsis"
-      ],
-      "verifyUpdateCodeSignature": false
-    },
-    "mac": {
-      "publish": [
-        "github"
-      ],
-      "category": "public.app-category.productivity",
-      "target": [
-        "dmg"
-      ]
-    },
-    "linux": {
-      "target": [
-        "AppImage"
-      ]
-    }
+    "electron": "^5.0.1",
+    "electron-builder": "^22.8.1"
   },
   "dependencies": {
-    "electron-updater": "^9.1.2"
-  },
-  "bugs": {
-    "url": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update/issues"
-  },
-  "homepage": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update#README",
-  "keywords": []
+    "electron-updater": "^4.0.6"
+  }
 }
