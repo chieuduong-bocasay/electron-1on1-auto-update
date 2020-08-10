@@ -37,10 +37,6 @@
       "target": [
         "nsis"
       ],
-      "arch": [
-        "x64",
-        "ia32"
-      ],
       "verifyUpdateCodeSignature": false
     },
     "mac": {
@@ -59,7 +55,7 @@
     }
   },
   "dependencies": {
-    "electron-updater": "^9.1.2"
+    "electron-updater": "^4.3.5"
   },
   "bugs": {
     "url": "https://github.com/chieuduong-bocasay/electron-1on1-auto-update/issues"
