@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const { app, BrowserWindow } = require("electron");
 const { autoUpdater } = require("electron-updater");
 
 let win;
@@ -64,12 +64,8 @@ autoUpdater.on("download-progress", (progressObj) => {
 });
 
 autoUpdater.on("update-downloaded", (info) => {
-  dispatch("Update downloaded, application re-start in 3 minutes");
+  dispatch("Update downloaded, application re-start in 3 seconds");
   setTimeout(() => {
-    ipcRenderer.send("restart_app");
+    autoUpdater.quitAndInstall();
   }, 3000);
-});
-
-ipcMain.on("restart_app", () => {
-  autoUpdater.quitAndInstall();
 });
