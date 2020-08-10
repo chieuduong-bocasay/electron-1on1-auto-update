@@ -1,16 +1,6 @@
 const { app, BrowserWindow } = require("electron");
 const { autoUpdater } = require("electron-updater");
 
-autoUpdater.setFeedURL({
-  provider: "github",
-  owner: "chieuduong-bocasay",
-  repo: "electron-1on1-auto-update",
-  token: "311c42e68ee580b07d071794f0f5a3475cbafb69",
-  private: false,
-});
-autoUpdater.autoDownload = false;
-autoUpdater.checkForUpdates();
-
 let win;
 
 const dispatch = (data) => {
@@ -18,13 +8,7 @@ const dispatch = (data) => {
 };
 
 const createDefaultWindow = () => {
-  win = new BrowserWindow({
-    webPreferences: {
-      nodeIntegration: true,
-    },
-  });
-
-  win.webContents.openDevTools();
+  win = new BrowserWindow();
 
   win.on("closed", () => {
     win = null;

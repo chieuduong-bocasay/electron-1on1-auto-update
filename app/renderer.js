@@ -6,8 +6,6 @@ let container = select("#messages");
 let progressBar = select("#progressBar");
 let version = select("#version");
 
-console.log("ipcRenderer", ipcRenderer);
-
 ipcRenderer.on("message", (event, text) => {
   let message = document.createElement("div");
   message.innerHTML = text;

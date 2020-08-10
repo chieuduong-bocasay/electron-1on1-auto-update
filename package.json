@@ -1,14 +1,14 @@
 {
-  "name": "1on1-auto-update",
+  "name": "electron-1on1-auto-update",
   "version": "0.0.2",
-  "description": "Chieu dep trai",
+  "description": "sample test auto update",
   "main": "./app/main.js",
   "scripts": {
     "start": "electron --debug .",
     "pack": "electron-builder --dir",
     "build": "electron-builder",
     "postinstall": "electron-builder install-app-deps",
-    "release": "GH_TOKEN=4d202146426934d9587c1ee0e6df7b0107a476c9 electron-builder build -p always"
+    "deploy": "electron-builder build -p always"
   },
   "repository": {
     "type": "git",
@@ -22,14 +22,6 @@
   },
   "build": {
     "appId": "com.electron.app",
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "chieuduong-bocasay",
-        "repo": "electron-1on1-auto-update",
-        "token": "311c42e68ee580b07d071794f0f5a3475cbafb69"
-      }
-    ],
     "win": {
       "publish": [
         "github"
@@ -46,11 +38,6 @@
       "category": "public.app-category.productivity",
       "target": [
         "dmg"
-      ]
-    },
-    "linux": {
-      "target": [
-        "AppImage"
       ]
     }
   },
