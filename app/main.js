@@ -8,7 +8,12 @@ const dispatch = (data) => {
 };
 
 const createDefaultWindow = () => {
-  win = new BrowserWindow();
+  win = new BrowserWindow({
+    webPreferences: {
+      nodeIntegration: true,
+    },
+  });
+  win.webContents.openDevTools();
 
   win.on("closed", () => {
     win = null;
