@@ -1,6 +1,6 @@
 {
   "name": "electron-1on1-auto-update",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "sample test auto update",
   "main": "./app/main.js",
   "scripts": {
