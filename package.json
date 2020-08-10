@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "build": "electron-builder build --mac --win --publish never",
-    "deploy": "GH_TOKEN=4d202146426934d9587c1ee0e6df7b0107a476c9 electron-builder build --mac --win --publish always"
+    "deploy": "electron-builder build --mac --win --publish always"
   },
   "author": "",
   "license": "ISC",
